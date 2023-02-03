@@ -1,0 +1,34 @@
+{
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/tapplay-tech/terraform-mod-network/issues"
+  },
+  "description": "module for networking basics",
+  "devDependencies": {
+    "semantic-release": "^19.0.5"
+  },
+  "directories": {
+    "example": "example",
+    "networking": "networking",
+    "test": "test"
+  },
+  "homepage": "https://github.com/tapplay-tech/terraform-mod-network#readme",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "yape_data_mod_network",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/github"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tapplay-tech/terraform-mod-network.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
