@@ -9,14 +9,14 @@
   },
   "directories": {
     "example": "example",
-    "networking": "networking",
+    "network": "network",
     "test": "test"
   },
   "homepage": "https://github.com/tapplay-tech/terraform-mod-network#readme",
   "keywords": [],
   "license": "ISC",
   "main": "index.js",
-  "name": "yape_data_mod_network",
+  "name": "terraform-mod-network",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
