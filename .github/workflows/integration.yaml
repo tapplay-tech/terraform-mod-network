@@ -29,10 +29,12 @@ jobs:
       - name: Setup Terraform CLI
         uses: hashicorp/setup-terraform@v2.0.2
 
-      - name: Test
+      - name: Setup Go
         uses: actions/setup-go@v1
         with:
           go-version: 1.20
+
+      - name: Test Terraform
         run: |
           cd test
           go mod init "terraform-mod-network"
