@@ -1,7 +1,7 @@
 package test
 
 import (
-	"fmt"
+	// "fmt"
 	"strings"
 	"testing"
 
@@ -42,9 +42,7 @@ func testPrivateSubnet(t *testing.T, terraformOptions *terraform.Options) {
 	subnetPrivlID := replacer.Replace(privateSubnetId)
 	arrayPublSubnets := strings.Split(subnetPrivlID, ",")
 
-	fmt.Println(arrayPublSubnets)
 	for _, subnet := range arrayPublSubnets {
-		fmt.Println(subnet)
 		assert.False(t, aws.IsPublicSubnet(t, subnet, "us-east-1"))
 	}
 }
@@ -55,9 +53,7 @@ func testPublicSubnet(t *testing.T, terraformOptions *terraform.Options) {
 	subnetPublID := replacer.Replace(publicSubnetId)
 	arrayPublSubnets := strings.Split(subnetPublID, ",")
 
-	fmt.Println(arrayPublSubnets)
 	for _, subnet := range arrayPublSubnets {
-		fmt.Println(subnet)
 		assert.True(t, aws.IsPublicSubnet(t, subnet, "us-east-1"))
 	}
 }
