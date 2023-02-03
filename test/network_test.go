@@ -51,7 +51,6 @@ func testPrivateSubnet(t *testing.T, terraformOptions *terraform.Options) {
 
 func testPublicSubnet(t *testing.T, terraformOptions *terraform.Options) {
 	publicSubnetId := terraform.Output(t, terraformOptions, "public_subnets")
-	//replace caracter [ to empty from string publicSubnetId
 	replacer := strings.NewReplacer("[", "", "]", "", "\"", "", "\n", "", " ", ",")
 	subnetPublID := replacer.Replace(publicSubnetId)
 	arrayPublSubnets := strings.Split(subnetPublID, ",")
