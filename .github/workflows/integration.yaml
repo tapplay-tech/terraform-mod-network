@@ -57,6 +57,5 @@ jobs:
       - name: Release
         run: npx semantic-release --debug
         with:
-        env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
