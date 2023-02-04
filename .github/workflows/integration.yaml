@@ -44,7 +44,7 @@ jobs:
           go mod tidy
           go test -v -timeout 30m
   Release:
-    needs: setup
+    needs: Test
     defaults:
       run:
         shell: bash
