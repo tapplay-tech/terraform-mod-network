@@ -55,7 +55,7 @@ jobs:
           npm ci
 
       - name: Release
-        run: npx semantic-release --debug
-        with:
+        env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: npx semantic-release
