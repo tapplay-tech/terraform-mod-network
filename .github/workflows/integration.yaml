@@ -58,4 +58,4 @@ jobs:
           npm ci
 
       - name: Release
-        run: npx semantic-release
+        run: npx semantic-release --debug
